@@ -1,0 +1,64 @@
+:root {
+  --bg: #0b0715;
+  --borda: rgba(167, 139, 250, 0.16);
+  --borda-forte: rgba(167, 139, 250, 0.4);
+  --roxo-300: #c4b5fd;
+  --roxo-400: #a78bfa;
+  --roxo-500: #8b5cf6;
+  --roxo-600: #7c3aed;
+  --roxo-700: #6d28d9;
+  --texto: #f3effe;
+  --texto-suave: #a79cc4;
+  --sucesso: #34d399;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--texto);
+  line-height: 1.55;
+  min-height: 100vh;
+  display: block;
+  place-items: initial;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
